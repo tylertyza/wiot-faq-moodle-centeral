@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-rgb: 174, 90, 29; /* RGB values of the primary color */
+
+            /* Derived colors */
+            --background-color: rgba(var(--primary-rgb), 0.03); /* Light background */
+            --active-background-color: rgba(var(--primary-rgb), 0.06); /* Slightly darker background for active */
+            --text-color: rgb(var(--primary-rgb)); /* Text color same as primary */
+
+            /* Font sizes */
+            --heading-font-size: 22px; /* Font size for accordion item headings */
+            --content-font-size: 18px; /* Font size for accordion content */
+        }
+
+        body {
+            font-family: "Segoe UI", sans-serif;
+            font-size: 16px;
+        }
+
+        /* Override inline styles using CSS variables */
+        .wiot-v2-accordion .card {
+            background-color: var(--background-color) !important;
+        }
+
+        .wiot-v2-accordion .active-card {
+            background-color: var(--active-background-color) !important;
+        }
+
+        .wiot-v2-accordion .accordion-item-toggle {
+            color: var(--text-color) !important;
+            font-size: var(--heading-font-size);
+        }
+
+        .wiot-v2-accordion .card > .collapse > div,
+        .wiot-v2-accordion .card > .collapsing > div {
+            color: var(--text-color) !important;
+            font-size: var(--content-font-size);
+        }
+
+        /* Additional hover styles */
+        .wiot-v2-accordion .accordion-item-toggle:hover {
+            background-color: var(--active-background-color) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Accordion HTML Code Start --><div id="accordion-1729737127458" role="tablist" class="wiot-v2-accordion">
+  
+  
+  <div class="card" style="border: none; background: #35528208; border-radius: 10px; margin-bottom: 15px !important;">
+    <div class="active" role="tab" id="headingaccordion-17297371274581" tabindex="1" aria-selected="true" style="margin: 0px !important; border: none;">
+      <h5 class="mb-0" style="font-weight: 700; margin-bottom: 0px !important;">
+        <a style="color: #355282; display: flex; align-items: center; text-decoration: none; padding: 30px !important; margin: 0px !important; border: none; border-radius: 10px;" data-toggle="collapse" href="#collapseaccordion-17297371274581" role="button" aria-expanded="false" aria-controls="collapseaccordion-17297371274581" class="accordion-item-toggle collapsed">
+          <span style="flex-grow: 1;">
+            My Student Can't Log In to Moodle
+          </span>
+          <span class="fa fa-plus" style="margin-left: auto !important; padding-left:10px !important;"></span>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseaccordion-17297371274581" class="collapse" role="tabpanel" aria-labelledby="headingaccordion-17297371274581" data-parent="#accordion-1729737127458" style="margin: 0px !important;">
+      <div style="padding: 15px 30px 30px 30px !important; color: #355282; margin: 0px !important;">
+        Moodle doesn’t have its own login feature; instead, it uses Single Sign-On (SSO) through Microsoft Azure, managed by ICT. If a student is having trouble logging in, follow these steps:
+<ul>
+<li><b>Confirm the Issue: </b>Contact the Moodle support team to confirm the student's ID and account status.</li>
+<li><b>Check Account Status: </b>The Moodle support team can verify the “Activate user account” status.</li>
+</ul>
+If the student is marked as active but still cannot log in, possible reasons may include:
+<ul>
+<li>The student is using a VPN that may block access.</li>
+<li>Issues with Wi-Fi or incorrect credentials.</li>
+<li>SSO clashes, such as cached credentials on shared devices.</li>
+<li>Problems with the Microsoft Azure Account. If a student receives a Microsoft error message, direct them to ICT to resolve Azure account issues.</li>
+</ul>
+Please note that while the Moodle team can assist in confirming the student’s Moodle account status, all student account management and access issues are ultimately handled by ICT.
+      </div>
+    </div>
+  </div>
+  <div class="card" style="border: none; background: #35528208; border-radius: 10px; margin-bottom: 15px !important;">
+    <div class="active" role="tab" id="headingaccordion-17297371274582" tabindex="1" aria-selected="true" style="margin: 0px !important; border: none;">
+      <h5 class="mb-0" style="font-weight: 700; margin-bottom: 0px !important;">
+        <a style="color: #355282; display: flex; align-items: center; text-decoration: none; padding: 30px !important; margin: 0px !important; border: none; border-radius: 10px;" data-toggle="collapse" href="#collapseaccordion-17297371274582" role="button" aria-expanded="false" aria-controls="collapseaccordion-17297371274582" class="accordion-item-toggle collapsed">
+          <span style="flex-grow: 1;">
+            Students Are Not Enrolled in My Unit
+          </span>
+          <span class="fa fa-plus" style="margin-left: auto !important; padding-left:10px !important;"></span>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseaccordion-17297371274582" class="collapse" role="tabpanel" aria-labelledby="headingaccordion-17297371274582" data-parent="#accordion-1729737127458" style="margin: 0px !important;">
+      <div style="padding: 15px 30px 30px 30px !important; color: #355282; margin: 0px !important;">
+        If students are not showing up in your unit, it could be due to one of these reasons:
+<ul>
+<li>The enrolment script from SMS has not yet run. Please check back in 12 hours.</li>
+<li>The script may have failed. If students are still missing after 12 hours, create a support ticket with EDT.</li>
+<li>There may be issues with poorly formatted user data. In some cases, students might not be enrolled in SMS, so check with Student Admin.</li>
+</ul>
+If you need users enrolled into your unit, this may be conducted by the following staff: 
+<ul>
+<li>Teacher</li>
+<li>Department Admin</li>
+<li>EDT staff</li>
+</ul>
+If you require EDT to enroll your students, please ticket this job and provide us with a list of the student IDs required. 
+      </div>
+    </div>
+  </div>
+  <div class="card" style="border: none; background: #35528208; border-radius: 10px; margin-bottom: 15px !important;">
+    <div class="active" role="tab" id="headingaccordion-17297371274583" tabindex="1" aria-selected="true" style="margin: 0px !important; border: none;">
+      <h5 class="mb-0" style="font-weight: 700; margin-bottom: 0px !important;">
+        <a style="color: #355282; display: flex; align-items: center; text-decoration: none; padding: 30px !important; margin: 0px !important; border: none; border-radius: 10px;" data-toggle="collapse" href="#collapseaccordion-17297371274583" role="button" aria-expanded="false" aria-controls="collapseaccordion-17297371274583" class="accordion-item-toggle collapsed">
+          <span style="flex-grow: 1;">
+            How Do I Create Quizzes or Assignments in Moodle?
+          </span>
+          <span class="fa fa-plus" style="margin-left: auto !important; padding-left:10px !important;"></span>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseaccordion-17297371274583" class="collapse" role="tabpanel" aria-labelledby="headingaccordion-17297371274583" data-parent="#accordion-1729737127458" style="margin: 0px !important;">
+      <div style="padding: 15px 30px 30px 30px !important; color: #355282; margin: 0px !important;">
+        If you need assistance in creating quizzes or assignments, reach out to the Moodle support team. You will need to provide the quiz questions, assignment requirements, and any specific settings (such as time limits or submission types). Please note that all assessments must be vetted by the Assessment Quality Officers (AQO) team and uploaded into the Teacher Resource Library (TRL) before being created in Moodle.
+      </div>
+    </div>
+  </div>
+  <div class="card" style="border: none; background: #35528208; border-radius: 10px; margin-bottom: 15px !important;">
+    <div class="active" role="tab" id="headingaccordion-17297371274584" tabindex="1" aria-selected="true" style="margin: 0px !important; border: none;">
+      <h5 class="mb-0" style="font-weight: 700; margin-bottom: 0px !important;">
+        <a style="color: #355282; display: flex; align-items: center; text-decoration: none; padding: 30px !important; margin: 0px !important; border: none; border-radius: 10px;" data-toggle="collapse" href="#collapseaccordion-17297371274584" role="button" aria-expanded="false" aria-controls="collapseaccordion-17297371274584" class="accordion-item-toggle collapsed">
+          <span style="flex-grow: 1;">
+            How Do I Build my Unit?
+          </span>
+          <span class="fa fa-plus" style="margin-left: auto !important; padding-left:10px !important;"></span>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseaccordion-17297371274584" class="collapse" role="tabpanel" aria-labelledby="headingaccordion-17297371274584" data-parent="#accordion-1729737127458" style="margin: 0px !important;">
+      <div style="padding: 15px 30px 30px 30px !important; color: #355282; margin: 0px !important;">
+        Building your unit in Moodle is pretty straightforward! Here’s a quick guide to get you started:<ol>
+<li><b>Ensure you have editing access:</b> This will be based on enrollment so you'll need to check if you have editing permission based on your unit role. </li>
+<li><b>Add sections:</b> If your unit has different topics or weeks, add sections by clicking 'Add topics' at the bottom of the course page. You can also rename these sections to match your unit structure. If you need support with learning design, request training with the Educational Design and Technologies team. </li>
+<li><b>Add activities and resources:</b> Click the 'Add an activity or resource' button in any section to add things like quizzes, assignments, files, or even forums. This is where you upload your content, create interactive elements, and set up assessments.</li>
+<li><b>Organise your content:</b> Drag and drop content or activities to reorganise them however you like. You can also use labels to add headers or descriptions for each section.</li>
+<li><b>Set up restrictions </b>(optional): If you want students to complete tasks in a certain order or restrict access based on dates or conditions, you can do that under 'Restrict Access' when editing each item.</li>
+<li><b>Review your unit:</b> Once you've added everything, switch back to 'Student View' to make sure your unit looks good and everything is accessible.</li>
+</ol>
+This is a basic step by step guide to building units technically, however, there are definitely more intricate steps based on the delivery requirements and cohort needs. For further information, please contact the Moodle team who can take over the build in a timely manner and provide you with the support required to complete the build. 
+
+      </div>
+    </div>
+  </div>
+  <div class="card" style="border: none; background: #35528208; border-radius: 10px; margin-bottom: 15px !important;">
+    <div class="active" role="tab" id="headingaccordion-17297371274585" tabindex="1" aria-selected="true" style="margin: 0px !important; border: none;">
+      <h5 class="mb-0" style="font-weight: 700; margin-bottom: 0px !important;">
+        <a style="color: #355282; display: flex; align-items: center; text-decoration: none; padding: 30px !important; margin: 0px !important; border: none; border-radius: 10px;" data-toggle="collapse" href="#collapseaccordion-17297371274585" role="button" aria-expanded="false" aria-controls="collapseaccordion-17297371274585" class="accordion-item-toggle collapsed">
+          <span style="flex-grow: 1;">
+            How Do I Fix an Assessment Question Issue in Moodle?
+          </span>
+          <span class="fa fa-plus" style="margin-left: auto !important; padding-left:10px !important;"></span>
+        </a>
+      </h5>
+    </div>
+    <div id="collapseaccordion-17297371274585" class="collapse" role="tabpanel" aria-labelledby="headingaccordion-17297371274585" data-parent="#accordion-1729737127458" style="margin: 0px !important;">
+      <div style="padding: 15px 30px 30px 30px !important; color: #355282; margin: 0px !important;">
+        This will depend on the type of issue that needs to be addressed.
+<ol>
+<li>If the issue is with the Word Document version of the assessment -
+For example:<ul>
+<li>there are no spaces for students to write in the Word document</li>
+<li>the question text/responses are incorrect</li>
+<li>the content is out of date</li>
+</ul>
+If this is the case, the fix needs to be made through the Assessment Quality Officers (AQOs) and be updated in the Teacher Resource Library (TRL) prior to contacting the Moodle team to update the assessment.<br> <br> 
+</li>
+<li>If the Moodle activity isn't displaying the Word document content correctly - 
+<ul>
+<li>The correct answer to a self-marking question is incorrect</li>
+<li>There's a typo in the Moodle activity</li>
+<li>The assessment activity is not in the right location</li>
+</ul>
+If this is the case, the teacher must contact the Moodle team via a ticket to log the job. 
+</li>
+</ol>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var accordion = document.getElementById('accordion-1729737127458');
+    var toggles = accordion.querySelectorAll('.accordion-item-toggle');
+
+    toggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var card = toggle.closest('.card');
+        var icon = toggle.querySelector('span.fa');
+        var isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        icon.className = isExpanded ? 'fa fa-plus' : 'fa fa-minus';
+        toggle.setAttribute('aria-expanded', !isExpanded);
+
+        if (isExpanded) {
+          card.style.backgroundColor = '#35528208';
+          card.classList.remove('active-card');
+        } else {
+          card.style.backgroundColor = '#35528210';
+          card.classList.add('active-card');
+        }
+
+        toggles.forEach(function(otherToggle) {
+          if (otherToggle !== toggle) {
+            var otherCard = otherToggle.closest('.card');
+            var otherIcon = otherToggle.querySelector('span.fa');
+            otherIcon.className = 'fa fa-plus';
+            otherToggle.setAttribute('aria-expanded', 'false');
+            otherCard.style.backgroundColor = '#35528208';
+            otherCard.classList.remove('active-card');
+          }
+        });
+      });
+
+      toggle.addEventListener('mouseover', function() {
+        if (!toggle.parentElement.parentElement.classList.contains('active-card')) {
+          toggle.style.backgroundColor = '#35528210';
+        }
+      });
+
+      toggle.addEventListener('mouseout', function() {
+        if (!toggle.parentElement.parentElement.classList.contains('active-card')) {
+          toggle.style.backgroundColor = '';
+        }
+      });
+    });
+  });
+</script>
+    <!-- Accordion HTML Code End -->
+
+    <!-- JavaScript Dependencies (Bootstrap, jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
